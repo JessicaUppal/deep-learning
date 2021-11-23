@@ -2,27 +2,27 @@
 
 ## Background
 
-The non-profit foundation Alphabet Soup wants to create an algorithm to predict whether or not applicants for funding will be successful. With your knowledge of machine learning and neural networks, use the features in the provided dataset to create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
+The non-profit foundation Alphabet Soup wants to create an algorithm to predict whether or not applicants for funding will be successful. With your knowledge of machine learning and neural networks, youâ€™ll use the features in the provided dataset to create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
 
-From Alphabet SoupÕs business team, you have received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as the following:
+From Alphabet Soupâ€™s business team, you have received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as the following:
 
-* **EIN** and **NAME**âIdentification columns
-* **APPLICATION_TYPE**âAlphabet Soup application type
-* **AFFILIATION**âAffiliated sector of industry
-* **CLASSIFICATION**âGovernment organization classification
-* **USE_CASE**âUse case for funding
-* **ORGANIZATION**âOrganization type
-* **STATUS**âActive status
-* **INCOME_AMT**âIncome classification
-* **SPECIAL_CONSIDERATIONS**âSpecial consideration for application
-* **ASK_AMT**âFunding amount requested
-* **IS_SUCCESSFUL**âWas the money used effectively
+* **EIN** and **NAME**â€”Identification columns
+* **APPLICATION_TYPE**â€”Alphabet Soup application type
+* **AFFILIATION**â€”Affiliated sector of industry
+* **CLASSIFICATION**â€”Government organization classification
+* **USE_CASE**â€”Use case for funding
+* **ORGANIZATION**â€”Organization type
+* **STATUS**â€”Active status
+* **INCOME_AMT**â€”Income classification
+* **SPECIAL_CONSIDERATIONS**â€”Special consideration for application
+* **ASK_AMT**â€”Funding amount requested
+* **IS_SUCCESSFUL**â€”Was the money used effectively
 
 ## Instructions
 
 ### Step 1: Preprocess the data
 
-Using your knowledge of Pandas and the Scikit-Learnâ€™s `StandardScaler()`, youÕll need to preprocess the dataset in order to compile, train, and evaluate the neural network model later in Step 2
+Using your knowledge of Pandas and the Scikit-Learnâ€™s `StandardScaler()`, youâ€™ll need to preprocess the dataset in order to compile, train, and evaluate the neural network model later in Step 2
 
 Using the information we have provided in the starter code, follow the instructions to complete the preprocessing steps.
 
@@ -37,9 +37,9 @@ Using the information we have provided in the starter code, follow the instructi
 
 ### Step 2: Compile, Train, and Evaluate the Model
 
-Using your knowledge of TensorFlow, youÕll design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet SoupÕs funded organization will be successful based on the features in the dataset. YouÕll need to think about how many inputs there are before determining the number of neurons and layers in your model. Once youÕve completed that step, youÕll compile, train, and evaluate your binary classification model to calculate the modelÕs loss and accuracy.
+Using your knowledge of TensorFlow, youâ€™ll design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soupâ€“funded organization will be successful based on the features in the dataset. Youâ€™ll need to think about how many inputs there are before determining the number of neurons and layers in your model. Once youâ€™ve completed that step, youâ€™ll compile, train, and evaluate your binary classification model to calculate the modelâ€™s loss and accuracy.
 
-1. Continue using the jupter notebook where youÕve already performed the preprocessing steps from Step 1.
+1. Continue using the jupter notebook where youâ€™ve already performed the preprocessing steps from Step 1.
 2. Create a neural network model by assigning the number of input features and nodes for each layer using Tensorflow Keras.
 3. Create the first hidden layer and choose an appropriate activation function.
 4. If necessary, add a second hidden layer with an appropriate activation function.
@@ -75,7 +75,7 @@ Optimize your model in order to achieve a target predictive accuracy higher than
 
 ### Step 4: Write a Report on the Neural Network Model
 
-For this part of the Challenge, youÕll write a report on the performance of the deep learning model you created for AlphabetSoup.
+For this part of the Challenge, youâ€™ll write a report on the performance of the deep learning model you created for AlphabetSoup.
 
 The report should contain the following:
 
