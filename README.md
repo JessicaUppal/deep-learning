@@ -1,4 +1,4 @@
-# Deep Learning Homework: Charity Funding Predictor
+Charity Funding Predictor
 
 ## Background
 
@@ -94,6 +94,4 @@ The report should contain the following:
 
 3. **Summary**: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
 
-___
-© 2021  Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.	
 
