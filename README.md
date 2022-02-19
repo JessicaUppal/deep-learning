@@ -10,9 +10,8 @@ Used Tensorflow to create a binary classifier for the non-profit organisation Al
 
 ## Instructions
 
-### Step 1: Preprocess the data
+### Step 1: Data Preprocessing 
 
-### Step 2: Preprossing the data
 1. charity_data.csv located in the [/Resources](Resources/) directory was read into a Pandas Dataframe 
 3. The number of unique values for each column were determined.
 4. For those columns that had more than 10 unique values,  data points for each unique value were also determined
