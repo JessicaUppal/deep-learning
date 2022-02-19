@@ -1,6 +1,6 @@
 Charity Funding Predictor
 
-![Neural_Network](Resources/neural_network.png)
+![Neural_Network](Resources/neutral_network.png)
 
 
 ## Background
