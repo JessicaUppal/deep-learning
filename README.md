@@ -1,86 +1,46 @@
-##Charity Funding Predictor
+## Charity Funding Predictor
 
 ![Neural_Network](Resources/neutral_network.png)
 
 
 ## Background
 
-Used Tensorflow to create a binary classifier for the non-profit organisation Alphabet Soup. This uses a neural network model to predict whether funding applicants will be successful. A dataset of more than 34,000 organisations that received funding historically was used to create the features the algorithm uses to make predictions.
+Used Tensorflow to create a binary classifier for the non-profit organisation Alphabet Soup. This uses a neural network model to predict whether funding applicants will be successful. A dataset of more than 34,000 organisations that received funding historically was used to create the features the algorithm uses to make predictions. Used Pandas and the Scikit-Learn’s `StandardScaler()`, to preprocess the dataset to compile, train, and evaluate the neural network model.
 
 
 ## Instructions
 
 ### Step 1: Preprocess the data
 
-Used Pandas and the Scikit-Learn’s `StandardScaler()`, to preprocess the dataset to compile, train, and evaluate the neural network model.
-
 ### Step 2: Preprossing the data
 1. charity_data.csv located in the [/Resources](Resources/) directory was read into a Pandas Dataframe 
-  * What variable(s) are considered the target(s) for your model?
-  * What variable(s) are considered the feature(s) for your model?
-2. Drop the `EIN` and `NAME` columns.
-3. Determine the number of unique values for each column.
-4. For those columns that have more than 10 unique values, determine the number of data points for each unique value.
-6. Use the number of data points for each unique value to pick a cutoff point to bin "rare" categorical variables together in a new value, `Other`, and then check if the binning was successful.
-7. Use `pd.get_dummies()` to encode categorical variables
+3. The number of unique values for each column were determined.
+4. For those columns that had more than 10 unique values,  data points for each unique value were also determined
+6. Using the number of data points for each unique value a cutoff point was chosen to bin "rare" categorical variables into a new value, `Other`
+7.`pd.get_dummies()` was used to encode categorical variables
 
 ### Step 2: Compile, Train, and Evaluate the Model
 
-Using your knowledge of TensorFlow, you’ll design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup–funded organization will be successful based on the features in the dataset. You’ll need to think about how many inputs there are before determining the number of neurons and layers in your model. Once you’ve completed that step, you’ll compile, train, and evaluate your binary classification model to calculate the model’s loss and accuracy.
-
-1. Continue using the jupter notebook where you’ve already performed the preprocessing steps from Step 1.
-2. Create a neural network model by assigning the number of input features and nodes for each layer using Tensorflow Keras.
-3. Create the first hidden layer and choose an appropriate activation function.
-4. If necessary, add a second hidden layer with an appropriate activation function.
-5. Create an output layer with an appropriate activation function.
-6. Check the structure of the model.
-7. Compile and train the model.
-8. Create a callback that saves the model's weights every 5 epochs.
-9. Evaluate the model using the test data to determine the loss and accuracy.
-10. Save and export your results to an HDF5 file, and name it `AlphabetSoupCharity.h5`.
+Using TensorFlow a neural network model, was used to create a binary classification model that can predict if an Alphabet Soup–funded organisation will be successful based on the features in the dataset. 
+Needed to establish how many inputs there were, before determining the number of neurons and layers in the model. The model was evaluated using the test data to determine the loss and accuracy. The code is located in the [/Notebooks](Notebooks/) directory and is named Preprocessing_code.ipynb
+The results were saved and exported to an HDF5 file, named `AlphabetSoupCharity.h5` located in the [/Resources](Resources/) directory. 
 
 ### Step 3: Optimize the Model
 
-Using your knowledge of TensorFlow, optimize your model in order to achieve a target predictive accuracy higher than 75%. If you can't achieve an accuracy higher than 75%, you'll need to make at least three attempts to do so.
+The model was optimised in order to achieve a target predictive accuracy higher than 75%. The optimisation notebook is located in the [/Notebooks](Notebooks/) directory named AlphabetSoupCharity_Optimization.ipynb 
 
-Optimize your model in order to achieve a target predictive accuracy higher than 75% by using any or all of the following:
+Three attempts were made to achieve an accuracy of >75%:
+* Increased hidden layers 
+* Increased number of epochs 
+* Increased neurons in hidden layers 
 
-* Adjusting the input data to ensure that there are no variables or outliers that are causing confusion in the model, such as:
-  * Dropping more or fewer columns.
-  * Creating more bins for rare occurrences in columns.
-  * Increasing or decreasing the number of values for each bin.
-* Adding more neurons to a hidden layer.
-* Adding more hidden layers.
-* Using different activation functions for the hidden layers.
-* Adding or reducing the number of epochs to the training regimen.
 
-**NOTE**: You will not lose points if your model does not achieve target performance, as long as you make three attempts at optimizing the model in your jupyter notebook.
+### Step 4: Report on the Neural Network Model
 
-1. Create a new Jupyter Notebook file and name it `AlphabetSoupCharity_Optimzation.ipynb`.
-2. Import your dependencies, and read in the `charity_data.csv` to a Pandas DataFrame.
-3. Preprocess the dataset like you did in Step 1, taking into account any modifications to optimize the model.
-4. Design a neural network model, taking into account any modifications that will optimize the model to achieve higher than 75% accuracy.
-5. Save and export your results to an HDF5 file, and name it `AlphabetSoupCharity_Optimization.h5`.
-
-### Step 4: Write a Report on the Neural Network Model
-
-For this part of the Challenge, you’ll write a report on the performance of the deep learning model you created for AlphabetSoup.
-
-The report should contain the following:
-
-1. **Overview** of the analysis: Explain the purpose of this analysis.
-
-2. **Results**: Using bulleted lists and images to support your answers, address the following questions.
-
-  * Data Preprocessing
-    * What variable(s) are considered the target(s) for your model?
-    * What variable(s) are considered to be the features for your model?
-    * What variable(s) are neither targets nor features, and should be removed from the input data?
-  * Compiling, Training, and Evaluating the Model
-    * How many neurons, layers, and activation functions did you select for your neural network model, and why?
-    * Were you able to achieve the target model performance?
-    * What steps did you take to try and increase model performance?
-
-3. **Summary**: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+The report on the performance of the deep learning model is located in the main directory named Report.md.
+The report provides:
+* An overview of the analysis 
+* Data preprocessing and the compiling and training of the model
+* Summary of overall results of the deep learning model, including a recommendation for how a different model could solve this classification problem, supported with an explanation
 
 
