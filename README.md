@@ -1,4 +1,4 @@
-## Charity Funding Predictor
+## Charity Funding Predictor - Binary Classifier 
 
 ![Neural_Network](Resources/neutral_network.png)
 
