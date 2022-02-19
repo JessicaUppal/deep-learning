@@ -30,8 +30,17 @@ The model was optimised in order to achieve a target predictive accuracy higher 
 
 Three attempts were made to achieve an accuracy of >75%:
 * Increased hidden layers 
+
+![Increasing hidden layers](Resources/optimisation_2.png)
+
+
 * Increased number of epochs 
+
+![Epoch Optimisation](Resources/optimisation_3.png)
+
 * Increased neurons in hidden layers 
+
+![Optimisation neurons](Resources/optimisation_1.png)
 
 
 ### Step 4: Report on the Neural Network Model
