@@ -28,17 +28,14 @@ The results were saved and exported to an HDF5 file, named `AlphabetSoupCharity.
 
 The model was optimised in order to achieve a target predictive accuracy higher than 75%. The optimisation notebook is located in the [/Notebooks](Notebooks/) directory named AlphabetSoupCharity_Optimization.ipynb 
 
-Three attempts were made to achieve an accuracy of >75%:
-* Increased hidden layers 
+### Three attempts were made to achieve an accuracy of >75%:
 
 ![Increasing hidden layers](Resources/optimisation_2.png)
 
 
-* Increased number of epochs 
 
 ![Epoch Optimisation](Resources/optimisation_3.png)
 
-* Increased neurons in hidden layers 
 
 ![Optimisation neurons](Resources/optimisation_1.png)
 
